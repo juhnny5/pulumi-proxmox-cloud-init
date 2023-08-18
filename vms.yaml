@@ -1,0 +1,116 @@
+---
+vms:
+  - name: "vm1"
+    node_name: "mox1"
+    resource_name: "vm1"
+    vm_id: 1000
+    agent:
+      enabled: false
+      trim: true
+      type: "virtio"
+    bios: "seabios"
+    cpu:
+      cores: 1
+      sockets: 1
+    cloud_init:
+      type: "nocloud"
+      datastore_id: "local-lvm"
+      dns:
+        domain: "homelab.lan"
+        server: "1.1.1.1 1.0.0.1"
+      ip_configs:
+        - ipv4:
+            address: "192.168.0.110/24"
+            gateway: "192.168.0.254"
+        # - ipv6:
+        #     address: "fd91:0812:a17f:6194::10/64"
+        #     gateway: "fd91:0812:a17f:6194::1"
+      user_account:
+        username: "ubuntu"
+        password: "ubuntu"
+        keys:
+          - ssh-rsa AAAAB3NzaC1...............
+    clone:
+      node_name: "mox1"
+      vm_id: 9000
+      full: true
+    disks:
+      - disk1:
+          interface: "scsi0"
+          datastore_id: "local-lvm"
+          size: 32
+          file_format: "raw"
+          cache: "none"
+      - disk2:
+          interface: "scsi1"
+          datastore_id: "local-lvm"
+          size: 32
+          file_format: "raw"
+          cache: "none"
+    memory:
+      dedicated: 512
+    network_devices:
+      - net1:
+          bridge: "vmbr0"
+          model: "virtio"
+      - net2:
+          bridge: "vmbr0"
+          model: "virtio"
+    on_boot: true
+  - name: "vm2"
+    node_name: "mox1"
+    resource_name: "vm2"
+    vm_id: 1001
+    agent:
+      enabled: false
+      trim: true
+      type: "virtio"
+    bios: "seabios"
+    cpu:
+      cores: 1
+      sockets: 1
+    cloud_init:
+      type: "nocloud"
+      datastore_id: "local-lvm"
+      dns:
+        domain: "homelab.lan"
+        server: "1.1.1.1 1.0.0.1"
+      ip_configs:
+        - ipv4:
+            address: "192.168.0.111/24"
+            gateway: "192.168.0.254"
+        # - ipv6:
+        #     address: "fd91:0812:a17f:6194::10/64"
+        #     gateway: "fd91:0812:a17f:6194::1"
+      user_account:
+        username: "ubuntu"
+        password: "ubuntu"
+        keys:
+          - ssh-rsa AAAAB3NzaC1...............
+    clone:
+      node_name: "mox1"
+      vm_id: 9000
+      full: true
+    disks:
+      - disk1:
+          interface: "scsi0"
+          datastore_id: "local-lvm"
+          size: 32
+          file_format: "raw"
+          cache: "none"
+      - disk2:
+          interface: "scsi1"
+          datastore_id: "local-lvm"
+          size: 32
+          file_format: "raw"
+          cache: "none"
+    memory:
+      dedicated: 512
+    network_devices:
+      - net1:
+          bridge: "vmbr0"
+          model: "virtio"
+      - net2:
+          bridge: "vmbr0"
+          model: "virtio"
+    on_boot: true

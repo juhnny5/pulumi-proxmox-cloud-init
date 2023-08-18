@@ -1,0 +1,11 @@
+Arpeggio==2.0.2
+attrs==23.1.0
+dill==0.3.7
+grpcio==1.56.0
+parver==0.4
+protobuf==4.24.0
+pulumi==3.78.1
+pulumi-proxmoxve==5.10.0
+PyYAML==6.0.1
+semver==2.13.0
+six==1.16.0

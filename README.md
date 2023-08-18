@@ -1,1 +1,1 @@
-# Pulumi + Proxmox + cloud-init = ❤️
+# Pulumi + Proxmox VE + cloud-init = ❤️

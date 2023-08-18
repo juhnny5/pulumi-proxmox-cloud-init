@@ -59,6 +59,7 @@ vi vms.yaml
 ## Usage
 
 ```bash
+pulumi stack init dev
 pulumi preview
 pulumi up
 ```

@@ -1,0 +1,6 @@
+name: pulumi-proxmox-cloudinit-v2
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Manage Proxmox VE vms with Pulumi

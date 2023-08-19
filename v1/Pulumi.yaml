@@ -1,4 +1,4 @@
-name: pulumi-proxmox-cloudinit
+name: pulumi-proxmox-cloudinit-v1
 runtime:
   name: python
   options:

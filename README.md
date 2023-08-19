@@ -2,6 +2,10 @@
 
 Creating vms with Pulumi on Proxmox VE.
 
+In this repository, you'll find 2 versions, the first where the vms configuration declaration is present in the vms.yaml file. In the second version, you can declare your vms in the vms/ folder, adding your vms in .yaml files with any name you like.
+
+The second version is more practical and easier to maintain.
+
 ## Configuration
 
 ### On Proxmox VE

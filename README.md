@@ -6,7 +6,7 @@ In this repository, you'll find 2 versions, the first where the vms configuratio
 
 The second version is more practical and easier to maintain.
 
-[Blog poste here](https://blog.jbriault.fr/pulumi-proxmox-cloudinit/).
+[Blog post here](https://blog.jbriault.fr/pulumi-proxmox-cloudinit/).
 
 ## Configuration
 
